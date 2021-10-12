@@ -1,4 +1,4 @@
-#include <stdio.i>
+#include <stdio.h>
 int main(){
     char str[] = "1234567890";
     printf("dont input longer than 9 letters:");

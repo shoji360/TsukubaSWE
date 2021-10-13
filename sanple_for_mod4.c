@@ -4,5 +4,5 @@
 void main(){
     float i;
     printf("input number\n")
-    scanf("%d", i);
+    scanf("%f", i);
 }

@@ -1,10 +1,9 @@
-#include <studio.h>
+#include <stdio.h>
 
-void main(){
+int main(void){
     printf("hello world!!!");
-    # this line is a comment!!
+    // this line is a comment!!
     for (int i = 1; i < 10; i++){
-        printf("i is %f\n", i);
+        printf("i is %d\n", i);
     }
 }
-

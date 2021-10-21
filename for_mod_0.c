@@ -1,18 +1,26 @@
-#include <stdio.i>
+#include <stdio.h>
 
-void main(){
+void main(void){
     // very slow prime number finder
-    int num;
+    int num,i,flag;
     printf("input your favorite number: ");
     scanf("%d", &num);
-    for (int i = 1; i <= num; i++){
-        if (i == num){
-            printf("%d is prime number!", num);
-            break;
+    flag=0;
+    for (i = 2; i < num; i++)
+    {
+        if (num % i == 0)
+        {
+            printf("%d can be divided by %d\n", num, i);
+            flag=1;
         }
-        if (i % num == 0){
-            printf("%d can be divided by %d", num, i);
-            break;
-        }
+    }
+
+    if (flag==0)
+    {
+        printf("%d is a prime number!\n", num);
+    }
+    if (flag==1)
+    {
+        printf("%d is not a prime number!\n", num);
     }
 }

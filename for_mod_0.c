@@ -1,4 +1,4 @@
-#include <stdio.i>
+#include <stdio.h>
 
 void main(){
     // very slow prime number finder

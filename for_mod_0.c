@@ -8,7 +8,7 @@ int main()
     scanf("%d", &num);
     if (num == 1)
     {
-        printf("1 is prime number!");
+        printf("1 is not prime number!");
     }
 
     for (int i = 2; i <= num; i++)
